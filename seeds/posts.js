@@ -7,8 +7,13 @@ exports.seed = function(knex, Promise) {
     // Inserts seed entries
     knex('posts').insert(
         {
-          a_id: 'Super',
-          m_id: 'super.user@gmail.com'
-        })                    
-    );
+          a_id: 1,
+          m_id: 1
+        }),
+    knex('posts').insert(
+        {
+          a_id: 2,
+          m_id: 3
+        })                
+  );
 };

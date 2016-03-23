@@ -7,6 +7,7 @@ exports.up = function(knex, Promise) {
   table.text('bio');
   table.string('twitter');
   table.string('instagram');
+  table.string('position');
   table.boolean('writer');
   table.boolean('editor');
   table.boolean('admin');
