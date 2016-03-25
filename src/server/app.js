@@ -39,7 +39,7 @@ app.use(express.static(path.join(__dirname, '../client')));
 // *** main routes *** //
 app.use('/', routes);
 app.use('/articles', articles);
-app.use('/members',members);
+app.use('/members', members);
 
 
 // catch 404 and forward to error handler
