@@ -1,0 +1,32 @@
+{% extends '../layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1>{{ title }}</h1>
+        <p>Welcome to {{ title }}</p>
+        <a href="/">Home</a>
+      </div>
+    </div>
+
+
+<!--     <div class="row">
+      {% for members in members %}
+      <div class="col-md-12 center members">
+        <img class="profile" src="https://placebear.com/300/300">
+        <h1>{{ members.name }}</h1>
+        <h3>{{ members.position }}</h3>
+        <p><a href="{{ members.m_id }}/">Profile</a></p>
+      </div>
+      {% endfor %}
+    </div> -->
+
+  </div>
+
+{% endblock %}
