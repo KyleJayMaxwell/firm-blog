@@ -11,4 +11,11 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.get('/:id', function(req, res, next) {
+  var id = req.params.id;
+  members.getSingleMember(id).then(function(members) {
+    res.render('members/single', { title: 'Individual Member', members:members });
+  });
+});
+
 module.exports = router;
