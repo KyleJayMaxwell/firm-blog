@@ -1,0 +1,31 @@
+{% extends '../layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1>{{ title }}</h1>
+        <p>Welcome to {{ title }}</p>
+        <a href="/">Home</a>
+      </div>
+    </div>
+
+
+    <div class="row">
+      {% for articles in articles %}
+      <div class="col-md-12 center articles">
+        <h1>{{ articles.title }}</h1>
+        <h3>{{ articles.category }}</h3>
+        <p><a href="{{ articles.a_id }}/">Article</a></p>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+
+{% endblock %}
