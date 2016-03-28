@@ -16,16 +16,15 @@
     </div>
 
 
-<!--     <div class="row">
-      {% for members in members %}
-      <div class="col-md-12 center members">
-        <img class="profile" src="https://placebear.com/300/300">
-        <h1>{{ members.name }}</h1>
-        <h3>{{ members.position }}</h3>
-        <p><a href="{{ members.m_id }}/">Profile</a></p>
+    <div class="row">
+      {% for articles in articles %}
+      <div class="col-md-12 center articles">
+        <h1>{{ articles.title }}</h1>
+        <h3>{{ articles.category }}</h3>
+        <p><a href="{{ articles.a_id }}/">Article</a></p>
       </div>
       {% endfor %}
-    </div> -->
+    </div>
 
   </div>
 

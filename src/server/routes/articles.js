@@ -7,8 +7,9 @@ var articles = require('../queries/articles');
 
 router.get('/', function(req, res, next) {
   articles.getAllArticles().then(function(articles) {
-    res.render('articles/all', { title: 'All Articles', articles:articles });
+    res.render('articles/all', { title: 'All Articles', articles : articles });
   });
+
 });
 
 module.exports = router;

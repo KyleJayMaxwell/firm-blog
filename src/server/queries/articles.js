@@ -6,6 +6,7 @@ module.exports = {
 
   getAllArticles: function(){
     return articles()
+    .leftJoin('categories', 'articles.c_id', 'categories.c_id')
     .then(function(articles) {
       return articles;
     });
