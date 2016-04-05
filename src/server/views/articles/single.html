@@ -17,11 +17,11 @@
 
 
     <div class="row">
-      {% for articles in articles %}
+      {% for article in article %}
       <div class="col-md-12 center articles">
-        <h1>{{ articles.title }}</h1>
-        <h3>{{ articles.category  }}</h3>
-        <p><a href="{{ articles.a_id }}/">Article</a></p>
+        <h1>{{ article.title }}</h1>
+        <h3>{{ article.category  }}</h3>
+        <p>{{ article.article }}</p>
       </div>
       {% endfor %}
     </div>
