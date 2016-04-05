@@ -10,13 +10,14 @@ module.exports = {
     .then(function(articles) {
       return articles;
     });
+  },
+  getSingleArticle: function(id){
+    return articles()
+    .leftJoin('categories', 'articles.c_id', 'categories.c_id')
+    .where('a_id', id)
+    .then(function(results) {
+      return results;
+    });
   }
-  // getSingleMember: function(id){
-  //   return members()
-  //   .where('m_id', id)
-  //   .then(function(results) {
-  //     return results;
-  //   });
-  // }
 
 };

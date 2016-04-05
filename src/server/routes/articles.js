@@ -12,4 +12,13 @@ router.get('/', function(req, res, next) {
 
 });
 
+router.get('/:id', function(req, res, next) {
+  var id = req.params.id;
+
+  articles.getSingleArticle(id).then(function(article) {
+    res.render('articles/single', { title: 'One Article', article : article });
+  });
+
+});
+
 module.exports = router;
